@@ -39,3 +39,19 @@ A full-stack Expense Tracker web application built using the MERN stack (MongoDB
 ---
 
 ## 📂 Project Structure
+
+│
+├── backend/
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── middleware/
+│ └── server.js
+│
+├── frontend/
+│ ├── components/
+│ ├── pages/
+│ ├── utils/
+│ └── src/
+│
+└── README.md
