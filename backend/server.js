@@ -27,6 +27,13 @@ app.use("/api/v1/income", incomeRoutes);
 app.use("/api/v1/expense", expenseRoutes);
 app.use("/api/v1/dashboard", dashboardRoutes);
 //Server uploads folder
+const fs = require("fs");
+
+const uploadDir = path.join(__dirname, "uploads");
+
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir);
+}
 
 app.use("/uploads", express.static(path.join(__dirname,"uploads")));
 
